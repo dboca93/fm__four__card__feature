@@ -1,0 +1,56 @@
+@media only screen and (max-width: 55em) {
+  main {
+    padding: 1.25rem;
+  }
+  section {
+    grid-template-columns: minmax(18.75rem, 32.5rem);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+      "article__supervisor"
+      "article__team__builder"
+      "article__korma"
+      "article__calculator";
+    gap: 1.875rem;
+  }
+
+  footer {
+    top: 1.5625rem; 
+    margin-right: 0; 
+    margin-bottom: 0.9375rem; 
+
+    ul {
+        margin-left: 0;
+        margin-right: 0; 
+    }
+  }
+
+}
+
+@media only screen and (min-width: 55.0625em) {
+  section {
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    gap: 2.1875rem;
+    grid-template-areas:
+      "article__supervisor article__team__builder article__calculator"
+      "article__supervisor article__korma article__calculator";
+
+    article {
+      &:nth-child(1) {
+        grid-area: article__supervisor;
+      }
+
+      &:nth-child(2) {
+        grid-area: article__team__builder;
+      }
+
+      &:nth-child(3) {
+        grid-area: article__korma;
+      }
+
+      &:nth-child(4) {
+        grid-area: article__calculator;
+      }
+    }
+  }
+}

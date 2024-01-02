@@ -1,0 +1,23 @@
+
+
+$red: hsl(0, 78%, 62%); 
+$cyan: hsl(180, 62%, 55%); 
+$orange: hsl(34, 97%, 64%); 
+$blue: hsl(212, 86%, 64%); 
+
+/*neutral colors*/
+
+$very__dark__blue: hsl(234, 12%, 34%); 
+$grayish__blue: hsl(229, 6%, 66%); 
+$very__light__gray: hsl(0, 0%, 98%); 
+
+/* font*/
+
+$font: 'Poppins', sans-serif;
+$font__footer: 'Orbitron', sans-serif;
+
+$font-weights: (
+    "light": 200, 
+    "regular": 400, 
+    "semibold": 600
+)
