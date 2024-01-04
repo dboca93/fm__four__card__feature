@@ -35,7 +35,7 @@
 
 
     header {
-      padding: 1.875rem 0 0 0; 
+      padding: 25px 0 0 0; 
       min-height: 10vh; 
 
       p {
@@ -44,7 +44,7 @@
     }
 
     main {
-      min-height: 70vh; 
+      min-height: 75vh; 
       width: 100vw; 
       padding-bottom: 3vh; 
       padding-top: min(calc(3vh + 1vw), var(--max-padding));

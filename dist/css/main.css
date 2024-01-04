@@ -146,7 +146,7 @@ header h1 span {
   color: hsl(233, 5%, 38%);
   display: block;
   text-align: center;
-  font-size: clamp(1.375rem, 4vw, 1.75rem);
+  font-size: clamp(20px, 3.5vw, 26px);
 }
 header h1 span:nth-child(1) {
   font-weight: 200;
@@ -157,9 +157,9 @@ header h1 span:nth-child(2) {
 header p {
   max-width: 34.375rem;
   color: hsl(233, 5%, 38%);
-  font-size: clamp(0.75rem, 3.5vw, 1.1563rem);
+  font-size: clamp(12px, 3vw, 18px);
   text-align: center;
-  margin: 1.25rem 0.125rem 0 0;
+  margin: 15px 2px 0 0;
 }
 
 section {
@@ -169,7 +169,7 @@ section {
 }
 section article {
   background-color: hsl(0, 0%, 98%);
-  height: calc(13rem + 5vh);
+  height: calc(11rem + 5.5vh);
   padding: 1.25rem;
   display: flex;
   flex-direction: column;
@@ -271,14 +271,14 @@ footer ul li a i:hover {
     position: relative;
   }
   header {
-    padding: 1.875rem 0 0 0;
+    padding: 25px 0 0 0;
     min-height: 10vh;
   }
   header p {
     padding-right: calc(0.3125rem + 0.5vw);
   }
   main {
-    min-height: 70vh;
+    min-height: 75vh;
     width: 100vw;
     padding-bottom: 3vh;
     padding-top: min(3vh + 1vw, var(--max-padding));
