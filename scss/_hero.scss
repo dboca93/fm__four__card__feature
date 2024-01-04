@@ -37,7 +37,7 @@ header {
       color: $modified__header__color;
       display: block;
       text-align: center;
-      font-size: clamp(20px, 3.5vw, 26px);
+      font-size: clamp(1.25rem, 3.5vw, 1.625rem);
       &:nth-child(1) {
         font-weight: map-get($font-weights, light);
       }
@@ -50,20 +50,20 @@ header {
   p {
     max-width: 34.375rem;
     color: $modified__header__color;
-    font-size: clamp(12px, 3vw, 18px);
+    font-size: clamp(0.75rem, 3vw, 1.0938rem);
     text-align: center;
-    margin: 15px 2px 0 0;
+    margin: 0.9375rem 0.125rem 0 0;
   }
 }
 
 section {
   display: grid;
   min-width: 18.75rem;
-  max-width: 1350px;
+  max-width: 84.375rem;
 
   article {
     background-color: $very__light__gray;
-    height: calc(11rem + 5.5vh);
+    height: calc(11.5rem + 5.5vh);
     padding: 1.25rem;
     display: flex;
     flex-direction: column;
