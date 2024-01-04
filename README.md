@@ -128,6 +128,22 @@ box-shadow to go around the curved corners. I tried to achive this with
 pseudo-elements, but to no avail. If someone could show me how to do this 
 or where I could learn I would be grateful. 
 
+***UPDATE***
+
+1. Provided by someone on FM: 
+  ```
+    box-shadow: 0 0 0.625rem 0.625rem rgba(0, 0, 0, 20%);
+  ```
+2. CHAT GPT Extension focusing on not having it on the 
+top (didn't really work to be honest.)
+```
+   box-shadow: 0 0.625rem 0.625rem rgba(0, 0, 0, 0%), /* Shadow on top (hidden) */
+            0.625rem 0 0.625rem rgba(0, 0, 0, 20%), /* Shadow on right */
+            0 0.625rem 0.625rem rgba(0, 0, 0, 20%), /* Shadow on bottom */
+            -0.625rem 0 0.625rem rgba(0, 0, 0, 20%); /* Shadow on left */
+```
+
+
 ***Thanks so much!!!***
 
 ---------------------------------------

@@ -173,7 +173,7 @@ section article {
   padding: 1.25rem;
   display: flex;
   flex-direction: column;
-  box-shadow: 0.625rem 0 0.3125rem -0.3125rem rgba(0, 0, 0, 0.3), -0.625rem 0 0.3125rem -0.3125rem rgba(0, 0, 0, 0.3), 0 0.625rem 0.625rem -0.3125rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 0.625rem 0.625rem rgba(0, 0, 0, 0.2);
   border-radius: 0.3125rem;
   position: relative;
   overflow: hidden;
