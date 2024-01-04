@@ -46,8 +46,7 @@
     main {
       min-height: 75vh; 
       width: 100vw; 
-      padding-bottom: 3vh; 
-      padding-top: min(calc(3vh + 1vw), var(--max-padding));
+      padding-top: min(calc(2.5vh + 1vw), var(--max-padding));
       display: flex;
       align-items: center;
       justify-content: center;
