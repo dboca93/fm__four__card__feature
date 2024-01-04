@@ -90,7 +90,7 @@ margin: auto 0;
 ***The card components use both rem and vh***
 
 ```
- height: calc(13rem + 5vh);
+ height: calc(11.5rem + 5.5vh);
 ```
 This creates a scenario where the cards get slightly taller on larger 
 screen sizes; helping the responsiveness of the website.
@@ -102,7 +102,7 @@ screen sizes; helping the responsiveness of the website.
 **5. A mixture of of variable calc and :root to limit padding**
 ***The padding gets slightly larger on larger screen sizes***
 ```
-      padding-top: min(calc(3vh + 1vw), var(--max-padding));
+      padding-top: min(calc(2.5vh + 1vw), var(--max-padding));
 ```
 This property only applies on larger screen sizes, but the idea is to 
 center the main section a little bit on larger screen sizes, but having 
