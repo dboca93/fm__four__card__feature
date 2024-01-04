@@ -1,4 +1,4 @@
-# Frontend Mentor - Huddle Landing Page
+# Frontend Mentor - Four Card Feature Section Master
 
 ## Table of contents
 
@@ -10,28 +10,109 @@
 
 ## Process
 
- I used CSS Grid for the core of the layout. 
-It changes from a one column layout on small screens 
-to a three-part column on larger screens. The auto 
-top and bottom margins have kept in in the middle. 
+ I used a combination of GRID, Flexbox and Position 
+ througout the layout. Changing from three columns down 
+ to one on smaller screen sizes was crucial for the layout. 
 
-*I've also used position: relative on the cards
-so I can position the image absolutely.* 
+ Also, using position: absolute on the footer was key to putting it 
+ at the bottom of the page. Using the relative/absolute combo 
+ was also key for accurately positioning the descriptive images 
+ inside the card components. 
 
 ## Screenshot
 
-![](./images/website__screenshot.png);
+![](./images/website__screenshot__two.png);
 
 ## What I learned
 
-That I can center a container vertically within the 
-context of a grid container using auto margins. 
+**1. The importance of min-height && height: fit-content**
 
+***Min-Height***
+
+Within this layout, -- on large screen
+sizes: the header has a min-height of 10vh, the main 
+has a min-height of 70vh. It's important to remember that as these 
+are minimums, the content can push these sections to larger sizes 
+with no issue. Also important, as to take these minimums off on 
+smaller screen sizes, as these seem not be necesarry in many cases 
+where to content is dictating the height. 
+
+***height: fit-content***
+
+The footer in this website uses fit-content, which is great when we 
+simply want the container to be no more than the height of 
+the feature content. 
+
+**2. Position: absolute on the footer**
+
+***Getting the footer to stay at the bottom of the page***
+
+Firstly, one must make sure that position: relative is placed 
+on the body. Then the following code is placed on the footer:
+
+```
+  position: absolute;
+  top: calc(100% - 1.5rem); 
+  height: fit-content;
+  bottom: 0rem;
+  left: 0rem;
+  width: 100vw;
+```
+The 1.5rem corresponds roughly to the height of the content. Try 
+this method in a few other contexts to see its effectiveness, but 
+it seems to work quiet well. However, we have -- on smaller screen
+sizes -- changed it to static, this is something also worth investigating. 
+
+Perhaps this is only suitable for a single landing page -- and would require 
+a fixed length on a website with vertically longer pages. 
+
+**3. Using __ margin: auto 0 __ to vertically center within GRID**
+
+***Keeping the card vertically centered***
+
+As we can see the cards on the left and the right are vertically centered
+within a grid context by using: 
+
+```
+margin: auto 0; 
+```
+
+**4. A mixture of fixed and variable tools to create responsive height**
+
+***The card components use both rem and vh***
+
+```
+ height: calc(13rem + 5vh);
+```
+This creates a scenario where the cards get slightly taller on larger 
+screen sizes; helping the responsiveness of the website. 
+
+**5. A mixture of of variable calc and :root to limit padding**
+***The padding gets slightly larger on larger screen sizes***
+```
+      padding-top: min(calc(3vh + 1vw), var(--max-padding));
+```
+This property only applies on larger screen sizes, but the idea is to 
+center the main section a little bit on larger screen sizes, but having 
+the --max-padding limit to prevent it going past this on the rare 
+super-wide screen. The definition of this in the root can be seen below:
+
+```
+  :root {
+    --max-padding: 5rem; 
+  }
+```
+For whatever reason, defining this variable with the other SASS variables
+did not work at all. Does anyone know why this is the case ?
 
 ## Future Improvements
 
-I need to learn how to get to get the box-shadow 
-perfectly even on a card even when it has border-radius.
+As one can see from the screenshot provided, I have not been able to get the 
+box-shadow to go around the curved corners. I tried to achive this with 
+pseudo-elements, but to no avail. If someone could show me how to do this 
+or where I could learn I would be grateful. 
+
+***Thanks so much!!!***
 
 ## Author 
 

@@ -2,6 +2,11 @@
   main {
     padding: 1.25rem;
   }
+
+  header {
+    padding: 2vh 0 0 0; 
+  }
+
   section {
     grid-template-columns: minmax(18.75rem, 32.5rem);
     grid-template-rows: repeat(4, 1fr);
@@ -14,19 +19,41 @@
   }
 
   footer {
-    top: 1.5625rem; 
-    margin-right: 0; 
-    margin-bottom: 0.9375rem; 
-
-    ul {
-        margin-left: 0;
-        margin-right: 0; 
-    }
+    position: static;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
 }
 
 @media only screen and (min-width: 55.0625em) {
+    body {
+      position: relative; 
+    }
+
+
+    header {
+      padding: 1.875rem 0.625rem 0 0; 
+      min-height: 10vh; 
+
+      p {
+        padding-right: calc(0.3125rem + 0.5vw); 
+      }
+    }
+
+    main {
+      min-height: 70vh; 
+      width: 100vw; 
+      padding-bottom: 3vh; 
+      padding-top: min(calc(3vh + 1vw), var(--max-padding));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+
   section {
     grid-template-columns: repeat(3, 1fr);
     width: 90%;
