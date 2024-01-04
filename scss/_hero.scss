@@ -9,7 +9,7 @@
 }
 
 body {
-  background-color: $modified__background__color;
+  background-color: $very__light__gray;
   min-height: 100vh;
   max-width: 100vw;
   min-width: 20rem;
@@ -33,7 +33,7 @@ header {
   h1 {
     max-width: 34.375rem;
     span {
-      color: $very__dark__blue;
+      color: $modified__header__color;
       display: block;
       text-align: center;
       font-size: clamp(1.375rem, 4vw, 2rem);
@@ -48,7 +48,7 @@ header {
 
   p {
     max-width: 34.375rem;
-    color: $grayish__blue;
+    color: $modified__header__color;
     font-size: clamp(0.75rem, 3.5vw, 1.25rem);
     text-align: center;
     margin: 1.25rem 0.125rem 0 0;
