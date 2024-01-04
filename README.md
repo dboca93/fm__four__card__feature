@@ -33,15 +33,17 @@ Within this layout, -- on large screen
 sizes: the header has a min-height of 10vh, the main 
 has a min-height of 70vh. It's important to remember that as these 
 are minimums, the content can push these sections to larger sizes 
-with no issue. Also important, as to take these minimums off on 
-smaller screen sizes, as these seem not be necesarry in many cases 
-where to content is dictating the height. 
+with no issue. These minimums can be taken off on smaller 
+screen sizes; adjust as required. 
 
 ***height: fit-content***
 
 The footer in this website uses fit-content, which is great when we 
 simply want the container to be no more than the height of 
 the feature content. 
+---------------------------------------
+<br>
+<br>
 
 **2. Position: absolute on the footer**
 
@@ -65,6 +67,9 @@ sizes -- changed it to static, this is something also worth investigating.
 
 Perhaps this is only suitable for a single landing page -- and would require 
 a fixed length on a website with vertically longer pages. 
+---------------------------------------
+<br>
+<br>
 
 **3. Using __ margin: auto 0 __ to vertically center within GRID**
 
@@ -76,6 +81,9 @@ within a grid context by using:
 ```
 margin: auto 0; 
 ```
+---------------------------------------
+<br>
+<br>
 
 **4. A mixture of fixed and variable tools to create responsive height**
 
@@ -85,7 +93,11 @@ margin: auto 0;
  height: calc(13rem + 5vh);
 ```
 This creates a scenario where the cards get slightly taller on larger 
-screen sizes; helping the responsiveness of the website. 
+screen sizes; helping the responsiveness of the website.
+
+---------------------------------------
+<br>
+<br>
 
 **5. A mixture of of variable calc and :root to limit padding**
 ***The padding gets slightly larger on larger screen sizes***
@@ -105,6 +117,10 @@ super-wide screen. The definition of this in the root can be seen below:
 For whatever reason, defining this variable with the other SASS variables
 did not work at all. Does anyone know why this is the case ?
 
+---------------------------------------
+<br>
+<br>
+
 ## Future Improvements
 
 As one can see from the screenshot provided, I have not been able to get the 
@@ -113,6 +129,10 @@ pseudo-elements, but to no avail. If someone could show me how to do this
 or where I could learn I would be grateful. 
 
 ***Thanks so much!!!***
+
+---------------------------------------
+<br>
+<br>
 
 ## Author 
 
