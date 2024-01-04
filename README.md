@@ -21,7 +21,7 @@
 
 ## Screenshot
 
-![](./images/website__screenshot__two.png);
+![](./images/website__screenshot__two.png)
 
 ## What I learned
 
@@ -63,9 +63,7 @@ on the body. Then the following code is placed on the footer:
 The 1.5rem corresponds roughly to the height of the content. Try 
 this method in a few other contexts to see its effectiveness, but 
 it seems to work quiet well. However, we have -- on smaller screen
-sizes -- changed it to static, this is something also worth investigating. 
-
-Perhaps this is only suitable for a single landing page -- and would require 
+sizes -- changed it to static, this is something also worth investigating. Perhaps this is only suitable for a single landing page -- and would require 
 a fixed length on a website with vertically longer pages. 
 ---------------------------------------
 <br>
