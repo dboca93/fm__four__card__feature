@@ -41,6 +41,7 @@ screen sizes; adjust as required.
 The footer in this website uses fit-content, which is great when we 
 simply want the container to be no more than the height of 
 the feature content. 
+
 ---------------------------------------
 <br>
 <br>
@@ -65,6 +66,7 @@ this method in a few other contexts to see its effectiveness, but
 it seems to work quiet well. However, we have -- on smaller screen
 sizes -- changed it to static, this is something also worth investigating. Perhaps this is only suitable for a single landing page -- and would require 
 a fixed length on a website with vertically longer pages. 
+
 ---------------------------------------
 <br>
 <br>
