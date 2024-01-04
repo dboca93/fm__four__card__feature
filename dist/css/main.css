@@ -146,7 +146,7 @@ header h1 span {
   color: hsl(233, 5%, 38%);
   display: block;
   text-align: center;
-  font-size: clamp(1.375rem, 4vw, 2rem);
+  font-size: clamp(1.375rem, 4vw, 1.75rem);
 }
 header h1 span:nth-child(1) {
   font-weight: 200;
@@ -157,7 +157,7 @@ header h1 span:nth-child(2) {
 header p {
   max-width: 34.375rem;
   color: hsl(233, 5%, 38%);
-  font-size: clamp(0.75rem, 3.5vw, 1.25rem);
+  font-size: clamp(0.75rem, 3.5vw, 1.1563rem);
   text-align: center;
   margin: 1.25rem 0.125rem 0 0;
 }
